@@ -363,7 +363,8 @@
 			],
 			"settings": {
 				"fontStyle": "",
-				"foreground": "#FFFF33"
+				//"foreground": "#FFFF33"
+				"foreground": "#ffff53"
 			}
 		},
 		{
