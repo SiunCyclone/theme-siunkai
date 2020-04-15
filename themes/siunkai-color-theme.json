@@ -262,7 +262,6 @@
 				"meta.preprocessor",
 				"keyword.control.directive.conditional.ifndef",
 				"keyword.control.directive.endif",
-				"keyword.control.flow.throw",
 			],
 			"settings": {
 				"fontStyle": "bold",
@@ -343,6 +342,7 @@
 		{
 			"name": "If else switch",
 			"scope": [
+				"keyword.control.conditional",
 				"keyword.control.conditional.if",
 				"keyword.control.conditional.else",
 				"keyword.control.switch",
@@ -381,6 +381,7 @@
 		{
 			"name": "Keyword Control Flow Return",
 			"scope": [
+        "keyword.control.flow",
 				"keyword.control.flow.return",
 				"keyword.control.return",
 				"keyword.control.flow.break",
@@ -420,12 +421,35 @@
 		},
 		{
 			"name": "Function name",
-			"scope": "entity.name.function",
+      "scope": [
+        "entity.name.function",
+        //"meta.function-call.python",
+			  "support.function",
+      ],
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#CCFF99"
 			}
-		},
+    },
+
+
+
+    /* TypeScript */
+    {
+			"name": "Reserved word",
+      "scope": [
+        "storage.type.class",
+        "storage.type.type",
+        "variable.language.this",
+
+      ],
+      "settings": {
+				"foreground": "#fff1c5"
+      }
+    },
+
+
+
 		/*
 		{
 			"name": "Class name",
@@ -458,14 +482,6 @@
 			"settings": {
 				"fontStyle": "",
 				"foreground": "#A6E22E"
-			}
-		},
-		{
-			"name": "Library function",
-			"scope": "support.function",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#66D9EF"
 			}
 		},
 		{
