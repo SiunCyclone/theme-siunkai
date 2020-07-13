@@ -224,6 +224,8 @@
 				"entity.name.type.interface",
 				"entity.name.type.enum",
 				"keyword.other.var",
+        //"support.type",
+        "support.class",
 			],
 			"settings": {
 				"fontStyle": "",
@@ -285,7 +287,7 @@
 			}
 		},
 		{
-			"name": "Preprocessor name",
+			"name": "preprocessor",
 			"scope": [
 				"entity.name.variable.preprocessor",
 				"entity.name.function.preprocessor",
@@ -296,7 +298,7 @@
 			}
 		},
 		{
-			"name": "If Else Switch",
+			"name": "if else switch",
 			"scope": [
 			],
 			"settings": {
@@ -305,7 +307,7 @@
 			}
 		},
 		{
-			"name": "Reserved word",
+			"name": "reserved word",
 			"scope": [
 				"keyword.other.class",
 				"keyword.other.struct",
@@ -340,7 +342,7 @@
 			}
 		},
 		{
-			"name": "If else switch",
+			"name": "ff else switch",
 			"scope": [
 				"keyword.control.conditional",
 				"keyword.control.conditional.if",
@@ -355,7 +357,7 @@
 			}
 		},
 		{
-			"name": "Loop",
+			"name": "loop",
 			"scope": [
 				"keyword.control.loop",
 				"keyword.control.while",
@@ -368,7 +370,7 @@
 			}
 		},
 		{
-			"name": "Arrow",
+			"name": "arrow",
 			"scope": [
 				"keyword.operator.arrow",
 			],
@@ -404,7 +406,12 @@
 		},
 		{
 			"name": "Storage",
-			"scope": "storage",
+			"scope": [
+        "storage",
+        "keyword.other.implicit",
+        "keyword.other.explicit",
+        "keyword.other.operator-decl",
+      ],
 			"settings": {
 				"fontStyle": "",
 				//"foreground": "#ff9123"
@@ -423,7 +430,7 @@
 			"name": "Function name",
       "scope": [
         "entity.name.function",
-        //"meta.function-call.python",
+        "meta.function-call.python",
 			  "support.function",
       ],
 			"settings": {
@@ -436,7 +443,7 @@
 
     /* TypeScript */
     {
-			"name": "Reserved word",
+			"name": "reserved word",
       "scope": [
         "storage.type.class",
         "storage.type.type",
@@ -447,6 +454,43 @@
 				"foreground": "#fff1c5"
       }
     },
+
+    /* Python */
+		{
+			"name": "if else switch",
+			"scope": [
+				"keyword.control.flow.python",
+			],
+			"settings": {
+				"foreground": "#f396e7"
+			}
+		},
+		{
+      "name": "normal",
+			"scope": [
+        "variable.parameter.function.language.python",
+        //"variable.parameter.function-call.python",
+        "meta.function-call.arguments.python",
+        "punctuation.definition.arguments.begin.python",
+        "punctuation.definition.arguments.end.python",
+        "constant.other.caps.python",
+			],
+			"settings": {
+        "fontStyle": "",
+				"foreground": "#F8F8F2"
+			}
+		},
+		{
+			"name": "function",
+      "scope": [
+        "meta.function-call.python",
+      ],
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#CCFF99"
+			}
+    },
+
 
 
 
@@ -464,16 +508,8 @@
 			"name": "Function argument",
 			"scope": "variable.parameter",
 			"settings": {
-				"fontStyle": "italic",
+				//"fontStyle": "italic",
 				"foreground": "#FD971F"
-			}
-		},
-		{
-			"name": "Tag name",
-			"scope": "entity.name.tag",
-			"settings": {
-				"fontStyle": "",
-				//"foreground": "#F92672"
 			}
 		},
 		{
@@ -483,7 +519,7 @@
 				"fontStyle": "",
 				"foreground": "#A6E22E"
 			}
-		},
+    },
 		{
 			"name": "Library constant",
 			"scope": "support.constant",
@@ -492,6 +528,7 @@
 				"foreground": "#66D9EF"
 			}
 		},
+    /*
 		{
 			"name": "Library class/type",
 			"scope": "support.type, support.class",
@@ -499,7 +536,8 @@
 				"fontStyle": "italic",
 				"foreground": "#66D9EF"
 			}
-		},
+    },
+    */
 		{
 			"name": "Library variable",
 			"scope": "support.other.variable",
