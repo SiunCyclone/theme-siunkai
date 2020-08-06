@@ -397,7 +397,8 @@
 			"name": "Keyword Other New",
 			"scope": [
 				"keyword.other.new",
-				"keyword.operator.new",
+        "keyword.operator.new",
+        "keyword.other.await",
 			],
 			"settings": {
 				//"fontStyle": "bold",
