@@ -342,7 +342,7 @@
 			}
 		},
 		{
-			"name": "ff else switch",
+			"name": "if else switch",
 			"scope": [
 				"keyword.control.conditional",
 				"keyword.control.conditional.if",
@@ -350,23 +350,13 @@
 				"keyword.control.switch",
 				"keyword.control.if",
 				"keyword.control.else",
-			],
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#f396e7"
-			}
-		},
-		{
-			"name": "loop",
-			"scope": [
 				"keyword.control.loop",
 				"keyword.control.while",
 				"keyword.control.for",
 			],
 			"settings": {
 				"fontStyle": "",
-				//"foreground": "#FFFF33"
-				"foreground": "#ffff53"
+				"foreground": "#f396e7"
 			}
 		},
 		{
@@ -398,11 +388,22 @@
 			"scope": [
 				"keyword.other.new",
         "keyword.operator.new",
-        "keyword.other.await",
 			],
 			"settings": {
 				//"fontStyle": "bold",
 				"foreground": "#ff357f"
+			}
+		},
+		{
+			"name": "Await",
+			"scope": [
+        "keyword.other.await",
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#fce477"
+				//"foreground": "#ff8d79"
+				//"foreground": "#ff77a9"
 			}
 		},
 		{
