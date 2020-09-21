@@ -324,6 +324,7 @@
 				"keyword.other.default",
 				"keyword.other.this",
         "keyword.other.base",
+        "keyword.other.nameof",
 				"keyword.control.loop.in",
 				"keyword.control.try",
 				"keyword.control.catch",
