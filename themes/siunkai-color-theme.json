@@ -354,6 +354,7 @@
 				"keyword.control.loop",
 				"keyword.control.while",
 				"keyword.control.for",
+				"keyword.control.c",
 			],
 			"settings": {
 				"fontStyle": "",
