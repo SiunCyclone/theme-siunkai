@@ -371,7 +371,16 @@
 				"foreground": "#F8F8F2"
 				//"foreground": "#FFFF99"
 			}
-		},
+    },
+    {
+      "name": "comma",
+      "scope": [
+        "punctuation.separator.comma",
+      ],
+      "settings": {
+				"foreground": "#c09465"
+      }
+    },
 		{
 			"name": "Keyword Control Flow Return",
 			"scope": [
